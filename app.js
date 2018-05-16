@@ -26,7 +26,6 @@ module.exports = app => {
         content = caches[name];
       } else {
         content = await fs.readFile(name, 'utf8');
-        console.log('content', content);
         content = extend.parse(content);
         useCache && (caches[name] = content);
       }
