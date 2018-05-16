@@ -3,7 +3,6 @@ const path = require('path');
 const handlebars = require('handlebars');
 const COMPILE = Symbol('compile');
 const extend = require('./lib/extend');
-
 const caches = {};
 
 module.exports = app => {
