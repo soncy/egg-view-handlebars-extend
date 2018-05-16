@@ -1,0 +1,26 @@
+{
+  "version": "0.0.1",
+  "author": "soncy <soncy1986@gmail.com>",
+  "name": "egg-view-handlebars-extend",
+  "description": "egg view plugin for handlebars with extend",
+  "eggPlugin": {
+    "name": "handlebars-extend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soncy/egg-view-handlebars-extend.git"
+  },
+  "keywords": [
+    "egg",
+    "egg-plugin",
+    "egg-view",
+    "handlebars"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "mz": "^2.7.0"
+  }
+}
