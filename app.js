@@ -5,7 +5,7 @@ const COMPILE = Symbol('compile');
 const extend = require('./lib/extend');
 const caches = {};
 
-module.exports = app => {
+exports = module.exports = app => {
   const config = app.config.handlebars;
   const partialsPath = config.partialsPath;
 
@@ -73,3 +73,5 @@ function registerPartials(partialsDir) {
 
   walk(partialsDir);
 }
+
+exports.handlebars = handlebars;

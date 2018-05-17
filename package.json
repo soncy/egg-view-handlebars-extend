@@ -1,5 +1,5 @@
 {
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "soncy <soncy1986@gmail.com>",
   "name": "egg-view-handlebars-extend",
   "description": "egg view plugin for handlebars with extend",
