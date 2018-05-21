@@ -7,47 +7,47 @@ egg view plugin for handlebars with extend
 
 ## 使用
 
-    ```js
-    // {app_root}/config/plugin.js
-    exports.handlebars = {
-      enable: true,
-      package: 'egg-view-handlebars-extend',
-    };
-    ```
+```js
+// {app_root}/config/plugin.js
+exports.handlebars = {
+  enable: true,
+  package: 'egg-view-handlebars-extend',
+};
+```
 
-    ```js
-    // {app_root}/config/config.default.js
-    module.exports = appInfo => {
-      const config = (exports = {});
+```js
+// {app_root}/config/config.default.js
+module.exports = appInfo => {
+  const config = (exports = {});
 
-      /**
-      * view
-      * @member
-      * @property defaultViewEngine: string setup default view engine
-      * @property defaultExtension: string template file extension
-      * @property mapping: Object {string: string}
-      */
-      config.view = {
-        defaultViewEngine: 'handlebars',
-        defaultExtension: '.handlebars',
-        mapping: {
-          '.handlebars': 'handlebars',
-        },
-      };
-      /**
-      * handlebars
-      * @member
-      * @property layoutsPath: string the path of layouts
-      * @property partialsPath: string the path of partials
-      * @property cache: Bollen use cache true|false
-      */
-      config.handlebars = {
-        'layoutsPath': path.join(appInfo.root, 'app/view/layouts'),
-        'partialsPath': path.join(appInfo.root, 'app/view'),
-        'cache': true
-      };
-    }
-    ```
+  /**
+  * view
+  * @member
+  * @property defaultViewEngine: string setup default view engine
+  * @property defaultExtension: string template file extension
+  * @property mapping: Object {string: string}
+  */
+  config.view = {
+    defaultViewEngine: 'handlebars',
+    defaultExtension: '.handlebars',
+    mapping: {
+      '.handlebars': 'handlebars',
+    },
+  };
+  /**
+  * handlebars
+  * @member
+  * @property layoutsPath: string the path of layouts
+  * @property partialsPath: string the path of partials
+  * @property cache: Bollen use cache true|false
+  */
+  config.handlebars = {
+    'layoutsPath': path.join(appInfo.root, 'app/view/layouts'),
+    'partialsPath': path.join(appInfo.root, 'app/view'),
+    'cache': true
+  };
+}
+```
 ## 获取handlebars
 
 `const handlebars = require('egg-view-handlebarsp-extend').handlebars`
