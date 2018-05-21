@@ -46,6 +46,8 @@ module.exports = appInfo => {
     'partialsPath': path.join(appInfo.root, 'app/view'),
     'cache': true
   };
+
+  return config;
 }
 ```
 ## 获取handlebars
