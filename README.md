@@ -47,7 +47,7 @@ egg view plugin for handlebars with extend
         'cache': true
       };
     }
-```
+    ```
 ## 获取handlebars
 
 `const handlebars = require('egg-view-handlebarsp-extend').handlebars`
