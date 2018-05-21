@@ -2,9 +2,9 @@
 egg view plugin for handlebars with extend
 
 ## 安装
-
-`npm i egg-view-handlebarsp-extend --save`
-
+```bash
+npm i egg-view-handlebarsp-extend --save
+```
 ## 使用
 
 ```js
@@ -52,21 +52,25 @@ module.exports = appInfo => {
 ```
 ## 获取handlebars
 
-`const handlebars = require('egg-view-handlebarsp-extend').handlebars`
+```js
+const handlebars = require('egg-view-handlebarsp-extend').handlebars
+```
 
 
 ## 支持继承
 继承主要的用法如下：
 
 在父模板中可以用`{{#block "name"}}{{/block}}`块来划分区块，父模板必须在layoutsPath中，如：
-
-    {{#block "header"}}这里是父模板的内容{{/block}}
+``` handlebars
+{{#block "header"}}这里是父模板的内容{{/block}}
+```
 
 在子模板中使用如下的方式继承：
-
-    {{#extend "layout"}}
-        {{#content "header" mode="append"}}这里是子模板的内容{{/content}}
-    {{/extend}}
+``` handlebars
+{{#extend "layout"}}
+    {{#content "header" mode="append"}}这里是子模板的内容{{/content}}
+{{/extend}}
+```
 
 mode支持：
 
