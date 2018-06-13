@@ -38,11 +38,13 @@ module.exports = appInfo => {
   * handlebars
   * @member
   * @property layoutsPath: string the path of layouts
+  * @property layoutsExt: string the extname of layouts
   * @property partialsPath: string the path of partials
   * @property cache: Bollen use cache true|false
   */
   config.handlebars = {
     'layoutsPath': path.join(appInfo.root, 'app/view/layouts'),
+    'layoutExt':'handlebars',
     'partialsPath': path.join(appInfo.root, 'app/view'),
     'cache': true
   };
